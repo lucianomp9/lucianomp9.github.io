@@ -444,9 +444,7 @@ margin-top: 120px;
         display: none;
     }
 
-    section{
-        margin-top: -60px;
-    }
+
     
     .home h1{
         font-size: 70px;
@@ -492,26 +490,16 @@ margin-top: 120px;
         font-size: 17px;
     }
     
-    .wave {
-        bottom: 58px;
-    }
 
     
     .spacer {
-        aspect-ratio: 460/230;
+        aspect-ratio: 410/230;
     }
 }
 
 @media screen and (max-width: 440px){
-    .wave{
-        bottom: 53px;
-    }
     
-    .wave svg {
-        height: 75px;
-        margin-top: 5px;
 
-    }
 
     .about-text h2{
         font-size: 35px;
@@ -556,15 +544,11 @@ margin-top: 120px;
 }
 
 @media screen and (max-width: 400px){
-    /*/.wave{
-        bottom: 6%;
-    }*/
+
 }
 
 @media screen and (max-width: 300px){
-    .wave{
-        bottom: 6%;
-    }
+
 
     section {
         padding: 118px 10%;
