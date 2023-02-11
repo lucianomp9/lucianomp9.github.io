@@ -493,20 +493,18 @@ margin-top: 120px;
     }
     
     .wave {
-        bottom: 3%;
+        bottom: 58px;
     }
 
-    .wave svg{
-        margin-top: 14px;
-    }
+    
     .spacer {
-        aspect-ratio: 350 / 250;
+        aspect-ratio: 460/230;
     }
 }
 
 @media screen and (max-width: 440px){
     .wave{
-        bottom: 5.5%;
+        bottom: 53px;
     }
     
     .wave svg {
@@ -558,9 +556,9 @@ margin-top: 120px;
 }
 
 @media screen and (max-width: 400px){
-    .wave{
+    /*/.wave{
         bottom: 6%;
-    }
+    }*/
 }
 
 @media screen and (max-width: 300px){
