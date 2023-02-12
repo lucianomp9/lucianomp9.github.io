@@ -9,7 +9,25 @@ body {
 section {
     padding: 120px 15%;
 }
+.waves1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.waves1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 228px;
+}
+
+.waves1 .shape-fill {
+    fill: #FFFFFF;
+}
 header{
     position: fixed;
     width: 100%;
@@ -83,20 +101,31 @@ a:visited {
 .wave svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
+    width: calc(100% + 4px);
     height: 229px;
 }
 
 .wave .shape-fill {
     fill: #D88C00;
 }
-
 .spacer{
     aspect-ratio: 1160/330;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+.spacer2{
+    aspect-ratio: 1160/330;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
 }
 
 .layer1{
@@ -495,10 +524,10 @@ margin-top: 120px;
     }
     
 
-    /*/
+    
     .spacer {
         aspect-ratio: 410/230;
-    }/*/
+    }
 }
 
 @media screen and (max-width: 440px){
@@ -544,6 +573,9 @@ margin-top: 120px;
 
     .home-text h3{
         font-size: 20px;
+    }
+    .spacer {
+        aspect-ratio: 150/120;
     }
 }
 
