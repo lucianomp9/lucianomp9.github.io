@@ -409,15 +409,28 @@ a:hover {
 
 .contact-arrow {
   position: relative;
-  height: 50px;
+  height: 40px;
 }
 
 .contact-arrow img {
-  width: 50px;
-  position: absolute;
-  top: 44%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    width: 40px;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveDown 2s infinite ease-in-out;
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translate(-50%, -50%) translateY(-20px);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    100% {
+        transform: translate(-50%, -50%) translateY(-20px);
+    }
 }
 
 .contact-form p {
@@ -445,7 +458,7 @@ header .menu-hamburger {
 }
 
 .contact-links a {
-  margin-left: 30px;
+  margin: 0px 10px;
   font-size: 20px;
 }
 
