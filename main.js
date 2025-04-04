@@ -12,6 +12,12 @@ $(document).ready(function () {
     navLinks.classList.toggle("mobile-menu");
   });
 
+  document.querySelectorAll(".navbar a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("mobile-menu");
+    });
+  });
+
   new TypeIt(".typeIt", {
     strings: ["Welcome to my Portfolio!", "¡Bienvenido a mi Portafolio!"],
     speed: 90,

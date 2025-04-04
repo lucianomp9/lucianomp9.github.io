@@ -516,7 +516,94 @@ header .menu-hamburger {
   font-size: 20px;
 }
 
-/*------Responsive Design--------*/
+.jobs .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid rgb(168, 109, 0);
+  background-image: url(media/animated-bg-info.svg);
+  background-size: cover;
+  border-radius: 30px;
+  padding: 5%;
+  box-shadow: 8px 8px 0px rgba(146, 97, 7, 0.62);
+}
+
+.jobs-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.jobs-title h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #d88c00;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 60px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #d88c00;
+}
+
+.job-item {
+  position: relative;
+}
+
+.job-item:first-child{
+  margin-bottom: 50px;
+}
+
+.job-dot {
+  position: absolute;
+  left: -45px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d88c00;
+}
+
+.job-date {
+  position: relative;
+  top: 7px;
+  color: #d88c00;
+  font-size: 1rem;
+  text-align: end;
+  left: 410px;
+  top: 20px;
+}
+
+.job-content {
+  padding-left: 15px;
+  max-width: 600px;
+}
+
+.job-name {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.job-title {
+  font-size: 1.2rem;
+  color: #d88c00;
+  margin-bottom: 8px;
+}
+
+.job-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ddd;
+}
 
 @media screen and (max-width: 1220px) {
   .about-text {
@@ -544,6 +631,13 @@ header .menu-hamburger {
 
   .skills-logos img {
     height: 2.4rem;
+  }
+
+  .job-date{
+    position: absolute;
+    left: 220px;
+    top: 30px;
+    width: fit-content;
   }
 }
 
@@ -642,6 +736,12 @@ header .menu-hamburger {
   .about-text {
     text-align: center;
   }
+
+  .job-date{
+    font-size: 12px;
+    left: 15px;
+    top: -20px;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -690,97 +790,4 @@ header .menu-hamburger {
   section {
     padding: 30px 6%;
   }
-}
-
-.jobs .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 3px solid rgb(168, 109, 0);
-  background-image: url(media/animated-bg-info.svg);
-  background-size: cover;
-  border-radius: 30px;
-  padding: 5%;
-  box-shadow: 8px 8px 0px rgba(146, 97, 7, 0.62);
-}
-
-.jobs-title {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.jobs-title h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #d88c00;
-}
-
-.timeline {
-  position: relative;
-  padding-left: 60px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 20px;
-  top: 0;
-  height: 100%;
-  width: 2px;
-  background: #d88c00;
-}
-
-.job-item {
-  position: relative;
-}
-
-.job-item:first-child{
-  margin-bottom: 50px;
-}
-
-.job-dot {
-  position: absolute;
-  left: -45px;
-  top: 8px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #d88c00;
-}
-
-.job-date {
-  position: absolute;
-  left: -250px;
-  top: 7px;
-  color: #d88c00;
-  font-size: 1rem;
-  width: fit-content;
-  text-align: end;
-}
-
-.job-item:first-child .job-date {
-  left: -230px;
-}
-
-.job-content {
-  padding-left: 15px;
-  max-width: 600px;
-}
-
-.job-name {
-  font-size: 1.4rem;
-  font-weight: 500;
-  margin-bottom: 5px;
-}
-
-.job-title {
-  font-size: 1.2rem;
-  color: #d88c00;
-  margin-bottom: 8px;
-}
-
-.job-description {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #ddd;
 }
