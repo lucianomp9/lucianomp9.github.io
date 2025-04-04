@@ -742,6 +742,10 @@ header .menu-hamburger {
     left: 15px;
     top: -20px;
   }
+
+  .timeline{
+    padding-top: 30px;
+  }
 }
 
 @media screen and (max-width: 440px) {
