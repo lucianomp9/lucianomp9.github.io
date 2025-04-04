@@ -40,3 +40,18 @@ $(document).ready(function () {
     }
   }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("cvModal");
+  const openBtn = document.getElementById("openCvModal");
+  const closeBtn = document.querySelector(".close");
+
+  openBtn.addEventListener('click', (event) => {
+    event.preventDefault();
+    modal.classList.add('show');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    modal.classList.remove('show');
+  });
+});

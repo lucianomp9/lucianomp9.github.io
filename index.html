@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--------Header-------->
     <header>
       <a href="#" class="logo" id="logo">Portfolio</a>
       <ul class="navbar">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
+        <li><a href="#jobs">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#project">Projects</a></li>
         <li><a href="#contact">Contact Me</a></li>
@@ -25,7 +25,6 @@
       />
     </header>
 
-    <!--------Home-------->
     <section class="home" id="home">
       <div class="home-text">
         <h4>Hi, my name is</h4>
@@ -35,7 +34,7 @@
     </section>
 
     <div class="spacer layer1"></div>
-    <!--------About Me-------->
+
     <section class="about reveal" id="about">
       <div class="about-content">
         <div class="about-img">
@@ -46,8 +45,8 @@
           <hr class="hr-divider">
           <p>
             I'm from Buenos Aires, Argentina and I'm 22 years old.<br />
-            Currently, I work at Ensolvers, where I serve as a Fullstack Software Engineer
-            with technologies like Java and Spring Boot for backend, and React/Typescript for Frontend.<br />
+            Currently, I work at Ensolvers, where I serve as a Software Engineer
+            with technologies like Java and Spring Boot for backend, and React with Typescript for Frontend.<br />
             Also, I'm studying a Bachelor's degree in Computer Science at Universidad Nacional de
             Lanus.<br /><br />
             I am constantly seeking online sources to develop and enhance my
@@ -58,11 +57,54 @@
             in love with.
           </p>
           <p>If you want to know more about me, you can download my CV here.</p>
-          <a href="media/CV-LucianoPerez-Fullstack-Developer.pdf" download="">Download CV</a>
+          <div>
+            <a href="#" id="openCvModal">View CV</a>
+            <a href="media/CV-Luciano-Perez-Fullstack-Developer-Java-2025.pdf" download="">Download CV</a>
+          </div>
+          
         </div>
       </div>
     </section>
-    <!--------Skills-------->
+
+     <section class="jobs">
+      <div class="container">
+        <div class="jobs-title">
+          <h2>Work Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="job-item">
+            <span class="job-dot"></span>
+            <span class="job-date">April 2024 - Present</span>
+            <div class="job-content">
+              <h3 class="job-name">Ensolvers</h3>
+              <h4 class="job-title">Software Engineer</h4>
+              <p class="job-description">
+                • Specialize in backend development with Java and Spring Boot, and frontend development with React and TypeScript,
+                  delivering robust and scalable solutions.
+              </p>
+              <p class="job-description">
+                • Develop several new features for a project with over 3,000 users, prioritizing scalability and user experience. Received
+                  highly positive feedback from users, emphasizing its impact on improving their overall experience
+              </p>
+            </div>
+          </div>
+          <div class="job-item">
+            <span class="job-dot"></span>
+            <span class="job-date">May 2023 - April 2024</span>
+            <div class="job-content">
+              <h3 class="job-name">Voolkia Software & Services</h3>
+              <h4 class="job-title">Functional Analyst</h4>
+              <p class="job-description">
+                • Project at Mercado Libre where I developed new scraping and product matching strategies to enhance data analysis effectiveness. Conducted product 
+                validation and review across multiple platforms to ensure data accuracy. Collaborated with cross-functional teams to 
+                align efforts and optimize processes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="skills reveal" id="skills">
       <div class="skills-content">
         <h2>My Skills</h2>
@@ -76,14 +118,11 @@
           <img src="media/logos/html5-logo.svg" alt="HTML5 Logo">
           <img src="media/logos/css-logo.svg" alt="CSS Logo">
           <img src="media/logos/js-logo.svg" alt="Javascript Logo">
-          <img src="media/logos/c-logo.svg" alt="C Logo">
-          <img src="media/logos/hibernate-logo.svg" alt="Hibernate Logo">
           <img src="media/logos/git-logo.svg" alt="Git Logo">
         </div>
       </div>
     </section>
 
-    <!--------Proyectos-------->
     <section class="project reveal" id="project">
       <div class="project-content">
         <div class="project-title">
@@ -140,9 +179,8 @@
               </div>
           </a>
       </div>
-    </section>
-
-    <!--------Contact-------->
+    </section>  
+    
     <section class="contact reveal" id="contact">
       <div class="contact-form">
         <h2>Contact Me</h2>
@@ -156,12 +194,17 @@
       </div>
     </section>
 
-    <!--------Footer-------->
     <div class="footer" id="footer">
-      <span>Luciano Perez&nbsp;©&nbsp;| 2024</span>
+      <span>Luciano Perez&nbsp;©&nbsp;| 2025</span>
     </div>
 
-    <!--------JavaScript-------->
+    <div id="cvModal" class="modal">
+      <div class="modal-content">
+        <span class="close">Close</span>
+        <iframe src="media/CV-Luciano-Perez-Fullstack-Developer-Java-2025.pdf" width="100%"></iframe>
+      </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
     <script src="./main.js"></script>
